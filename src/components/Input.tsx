@@ -1,8 +1,9 @@
-import React from "react";
+
+import { ReactSetState } from "../Types/utils";
 
 type Input={
     inputValue:string;
-    setInputValue: React.Dispatch<React.SetStateAction<string>>
+    setInputValue:ReactSetState<string>
 }
 
 export default function Input({inputValue,setInputValue}:Input) {
